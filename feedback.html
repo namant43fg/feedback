@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Cosmic Feedback Portal 🌌🚀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet" >
+    <style>
+        :root {
+            --neon-blue: #6bd5ff;
+            --deep-space: #0a0826;
+            --alien-green: #7fffd4;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--deep-space);
+            overflow: hidden;
+            font-family: 'Space Mono', monospace;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 30"><path fill="%236bd5ff" d="M12 0L24 30H0L12 0z"/></svg>'), auto;
+        }
+
+        /* Quantum Field Background */
+        .quantum-field {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+
+        /* Hyperspace Tunnel */
+        .hyperspace-tunnel {
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, transparent 60%, var(--neon-blue));
+            animation: hyperspace 20s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes hyperspace {
+            from { transform: rotate(0deg) scale(1); }
+            to { transform: rotate(360deg) scale(2); }
+        }
+
+        /* Neutrino Particles */
+        .neutrino {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--neon-blue);
+            border-radius: 50%;
+            animation: neutrinoFlow 5s linear infinite;
+        }
+
+        @keyframes neutrinoFlow {
+            from { transform: translateY(-100vh); }
+            to { transform: translateY(100vh); }
+        }
+
+        /* Wormhole Gateway */
+        .wormhole {
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background: conic-gradient(
+                #4f2be8,
+                #6bd5ff,
+                #4f2be8
+            );
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0;
+            animation: singularitySpin 20s linear infinite;
+        }
+
+        @keyframes singularitySpin {
+            from { transform: rotate(0deg) scale(0.5); }
+            to { transform: rotate(360deg) scale(1.5); }
+        }
+
+        /* Quantum Form Interface */
+        .form-container {
+            background: rgba(11, 4, 34, 0.95);
+            padding: 2.5rem;
+            border-radius: 15px;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 50px #4f2be866;
+            backdrop-filter: blur(5px);
+            transform: perspective(1000px) rotateX(5deg);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-container:hover {
+            transform: perspective(1000px) rotateX(0deg) translateY(-10px);
+            box-shadow: 0 0 100px #6bd5ff66;
+        }
+
+        /* Holographic Title */
+        .form-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: var(--neon-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            text-shadow: 0 0 15px var(--neon-blue);
+            animation: hologram 2s infinite alternate;
+        }
+
+        @keyframes hologram {
+            0% { transform: translateY(0) skew(0deg); text-shadow: 0 0 15px var(--neon-blue); }
+            50% { transform: translateY(-3px) skew(2deg); text-shadow: 0 0 25px var(--neon-blue); }
+            100% { transform: translateY(3px) skew(-2deg); text-shadow: 0 0 15px var(--neon-blue); }
+        }
+
+        /* Quantum Input Fields */
+        .form-group {
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 1.2rem;
+            background: rgba(16, 6, 53, 0.9);
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 30px var(--neon-blue);
+            transform: scale(1.02);
+            background: rgba(16, 6, 53, 0.95);
+        }
+
+        /* AI Assistant Particles */
+        .ai-particle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: var(--alien-green);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: aiOrbit 5s linear infinite;
+        }
+
+        @keyframes aiOrbit {
+            from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+        }
+
+        /* Quantum Submit Button */
+        .submit-btn {
+            background: linear-gradient(45deg, #4f2be8, #6bd5ff);
+            color: var(--deep-space);
+            border: none;
+            padding: 1.5rem 3rem;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transform-style: preserve-3d;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px) rotateX(15deg);
+            box-shadow: 0 0 50px var(--neon-blue);
+        }
+
+        /* Gravitational Distortion */
+        .gravitational-distortion {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #6bd5ff33 10%, transparent 60%);
+            pointer-events: none;
+            animation: gravityPulse 3s infinite;
+        }
+
+        @keyframes gravityPulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.5); opacity: 0.1; }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="quantum-field" id="quantumField"></div>
+    <div class="hyperspace-tunnel" id="hyperspaceTunnel"></div>
+    <div class="wormhole" id="wormhole"></div>
+
+    <div class="form-container">
+        <h1 class="form-title">QUANTUM FEEDBACK TRANSCEIVER</h1>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="name">COSMIC IDENTIFIER</label>
+                <input type="text" id="name" name="name" required placeholder="Enter quantum signature">
+                <div class="gravitational-distortion" style="top: 50%; left: -50px;"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">HYPERSPATIAL ADDRESS</label>
+                <input type="email" id="email" name="email" required placeholder="user@multiverse.org">
+                <div class="ai-particle" style="top: 20px; right: -40px;"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">TRANSDIMENSIONAL MESSAGE</label>
+                <textarea id="comments" name="comments" rows="5" required placeholder="Encode your quantum state..."></textarea>
+                <div class="neutrino" style="left: 10%; top: -20px;"></div>
+                <div class="neutrino" style="left: 90%; top: 120%;"></div>
+            </div>
+
+            <button type="submit" class="submit-btn">INITIATE QUANTUM TRANSMISSION</button>
+        </form>
+    </div>
+
+    <script>
+        // Initialize quantum field
+        function createQuantumField() {
+            const field = document.getElementById('quantumField');
+            for(let i = 0; i < 200; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'neutrino';
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.animationDuration = `${Math.random() * 3 + 1}s`;
+                field.appendChild(particle);
+            }
+        }
+
+        // Activate hyperspace
+        function activateHyperspace() {
+            const tunnel = document.getElementById('hyperspaceTunnel');
+            const wormhole = document.getElementById('wormhole');
+            
+            tunnel.style.opacity = '0.3';
+            wormhole.style.opacity = '0.2';
+            
+            setTimeout(() => {
+                tunnel.style.opacity = '0';
+                wormhole.style.opacity = '0';
+            }, 2000);
+        }
+
+        // Quantum transmission handler
+        async function handleSubmit(event) {
+            event.preventDefault();
+            activateHyperspace();
+            
+            const form = event.target;
+            const submitBtn = form.querySelector('.submit-btn');
+
+            try {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'ENGAGING QUANTUM ENTANGLEMENT <span class="ai-particle"></span>';
+                
+                // Add temporal distortion
+                document.documentElement.style.setProperty('--neon-blue', '#7fffd4');
+                setTimeout(() => {
+                    document.documentElement.style.setProperty('--neon-blue', '#6bd5ff');
+                }, 1000);
+
+                await emailjs.sendForm(
+                    'service_joots9q',
+                    'template_bnt49hp',
+                    form
+                );
+
+                // Success sequence
+                document.getElementById('wormhole').style.opacity = '0.5';
+                setTimeout(() => {
+                    alert('TRANSMISSION SUCCESS!\nMESSAGE RECEIVED IN ALPHA CENTAURI');
+                    form.reset();
+                }, 1500);
+            } catch (error) {
+                // Quantum error correction
+                document.documentElement.style.setProperty('--neon-blue', '#ff6b6b');
+                setTimeout(() => {
+                    document.documentElement.style.setProperty('--neon-blue', '#6bd5ff');
+                }, 1000);
+                alert('QUANTUM DECOHERENCE DETECTED!\nRETRY TRANSMISSION');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'INITIATE QUANTUM TRANSMISSION';
+            }
+        }
+
+        // Initialize quantum environment
+        (function() {
+            emailjs.init('1wdTt-S1yuo_L8qZ6');
+            createQuantumField();
+            document.getElementById('feedbackForm').addEventListener('submit', handleSubmit);
+            
+            // Add gravitational interactions
+            document.addEventListener('mousemove', (e) => {
+                const gravity = document.createElement('div');
+                gravity.className = 'gravitational-distortion';
+                gravity.style.left = `${e.clientX - 100}px`;
+                gravity.style.top = `${e.clientY - 100}px`;
+                document.body.appendChild(gravity);
+                setTimeout(() => gravity.remove(), 3000);
+            });
+        })();
+    </script>
+</body>
+</html>
